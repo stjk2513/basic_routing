@@ -1,12 +1,16 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div style="padding: 2rem; font-family: system-ui">
-    <h1>Welcome to basic_routing! 🎉</h1>
-    <p>Your app is ready to go.</p>
-  </div>
+  <h1>Hello App!</h1>
+  <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
+  <nav>
+    <RouterLink to="/">Go to Home</RouterLink>
+    <br></br>
+    <RouterLink to="/about">Go to About</RouterLink>
+  </nav>
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
